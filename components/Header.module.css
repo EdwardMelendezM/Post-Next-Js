@@ -1,0 +1,15 @@
+.navigator{
+  display: flex;
+  gap: 20px;
+
+}
+.item_li{
+  list-style: none;
+
+}
+.header{
+  border: 1px solid #111111;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+}
