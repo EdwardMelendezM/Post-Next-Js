@@ -1,3 +1,4 @@
+import Image from 'next/image'
 
 const singleFetch = (id) => {
   // throw new Error("Error")
@@ -17,6 +18,7 @@ export default async function PostId ({ params }) {
         <li key={comment.id}>
           <h2>{comment.name}</h2>
           <p>{comment.body}</p>
+          <Image width='50' height='50' src={`https://avatars.dicebear.com/api/pixel-art-neutral/${comment.email}.svg`} alt={comment.name} />
         </li>
       ))}
     </ul>
