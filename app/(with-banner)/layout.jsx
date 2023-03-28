@@ -2,7 +2,7 @@
 export default function PostLayout ({ children }) {
   return (
     <div>
-      <small>Home &bull;</small>
+      <marquee style={{ color: 'purple', background: '#fff' }}>Home &bull;</marquee>
       {children}
     </div>
   )
