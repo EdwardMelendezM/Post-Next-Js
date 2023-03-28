@@ -11,7 +11,7 @@ export default async function PostId ({ params }) {
   const { id } = params
   const comments = await singleFetch(id)
   return (
-    <ul>
+    <ul style={{ padding: '15px', fontSize: '10px', backgroundColor: '#444' }}>
       {comments.map(comment => (
         <li key={comment.id}>
           <h2>{comment.name}</h2>

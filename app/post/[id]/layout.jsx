@@ -11,9 +11,8 @@ const singleFetch = (id) => {
 export default async function PostId ({ children, params }) {
   const { id } = params
   const post = await singleFetch(id)
-  console.log(post)
   return (
-    <article>
+    <article style={{ paddingRight: '15px' }}>
       <h1>{post.title}</h1>
       <p>{post.body}</p>
       <Link href={`/post/${id}/comments`}>
