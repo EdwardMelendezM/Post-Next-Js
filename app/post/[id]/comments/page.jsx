@@ -1,5 +1,6 @@
 
 const singleFetch = (id) => {
+  // throw new Error("Error")
   return fetch(`http://jsonplaceholder.typicode.com/posts/${id}/comments`, {
     next: {
       revalidate: 60
